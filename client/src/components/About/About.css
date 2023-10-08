@@ -1,0 +1,57 @@
+
+
+.about-me-card {
+    max-width: 1500px;
+    margin: 90px auto;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid;
+    background-color: #fff;
+    border-radius: 8px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  }
+  .edu-list{
+    text-align: justify;
+  }
+  .achievement{
+    text-align: justify;
+  }
+  .skills{
+    text-align: justify;
+  }
+  .position{
+    text-align: justify;
+  }
+  
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .about-me-card {
+    margin: 10px;
+    padding: 10px;
+  }
+  
+  .edu-list,
+  .achievement,
+  .skills,
+  .position {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-me-card {
+    margin: 6px;
+    padding: 6px;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+}

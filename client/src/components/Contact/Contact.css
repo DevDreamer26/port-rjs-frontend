@@ -1,0 +1,104 @@
+/* Contact.css */
+
+/* Style for the overall container */
+.contact-container {
+  max-width: 950px;
+  margin: 25px auto;
+  padding: 50px;
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+/* Style for the heading */
+.contact-container h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Style for the contact information */
+.contact-info {
+  margin-top: 10px;
+}
+
+.contact-info p {
+  margin: 8px 0;
+}
+
+.contact-info a {
+  text-decoration: none;
+  color: #0078d4; /* Link color */
+}
+
+/* Style for the contact form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for form fields */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 100px;
+}
+
+/* Style for the submit button */
+button[type="submit"] {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #005a9e;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .contact-container {
+    padding: 20px;
+  }
+  .contact-container h1 {
+    font-size: 24px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .contact-container {
+    padding: 20px;
+  }
+  .contact-container h1 {
+    font-size: 15px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 8px;
+  }
+}

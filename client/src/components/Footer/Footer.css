@@ -1,0 +1,20 @@
+/* Style for the footer container */
+.ftr {
+  text-align: center;
+  padding: 10px;
+  /* background-color: #5c87ff; */
+  color: rgba(107, 107, 107, 0.377);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .ftr {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ftr {
+    font-size: 12px;
+  }
+}

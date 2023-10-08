@@ -1,0 +1,108 @@
+/* Projects.css */
+
+/* Style for the overall container */
+.projects-container {
+  max-width: 800px;
+  margin: 50px auto;
+  height: 750px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px; /* Rounded corners for the card */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Box shadow */
+}
+
+/* Style for the project card */
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  padding: 5px;
+  background-color: #f9f9f9;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); */
+}
+
+.project-card p {
+  padding: 10px;
+  font-size: 16px;
+  color: #666;
+  word-wrap: break-word;
+}
+
+/* Style for the project links */
+.project-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.project-links a {
+  text-decoration: none;
+  color: #0078d4;
+  padding: 5px 15px;
+  border: 1px solid #0078d4;
+  border-radius: 4px;
+  font-size: 24px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-links a:hover {
+  background-color: #0078d4;
+  color: white;
+}
+
+.project-links a:first-child {
+  margin-right: 10px;
+}
+
+/* Style for the navigation buttons */
+.navigation-buttons {
+  margin-top: 20px;
+}
+
+.navigation-buttons button {
+  background-color: #0078d4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.navigation-buttons button:hover {
+  background-color: #005a9e;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .projects-container {
+    padding: 10px;
+  }
+  .project-card p {
+    font-size: 14px;
+  }
+  .project-links a {
+    font-size: 20px;
+  }
+  .navigation-buttons button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .projects-container {
+    padding: 5px;
+  }
+  .project-card p {
+    font-size: 12px;
+  }
+  .project-links a {
+    font-size: 18px;
+  }
+  .navigation-buttons button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
