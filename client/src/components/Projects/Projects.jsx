@@ -1,83 +1,87 @@
-import React, { useState } from 'react';
-import './Projects.css'; // Import your CSS file
-import Footer from '../Footer/Footer';
+import React from 'react';
+import './Projects.css'
+import Footer from '../Footer/Footer'
 
-const projects = [
-  {
-    id: 1,
-    title: 'Prestoclean.in',
-    description: 'This is a full-stack laundry service web application. I have designed some part of the frontend of this website',
-    webLink: 'https://prestoclean.netlify.app', 
-    githubLink: 'https://github.com/DevDreamer26/', 
-  },
-  {
-    id: 2,
-    title: 'GigCrafters',
-    description: 'This is my freelancing site.',
-    webLink: 'https://gigcrafters.netlify.app',
-    githubLink: 'https://github.com/DevDreamer26/FroductiveNew',
-  },
-  {
-    id: 3,
-    title: 'Black-Jack',
-    description: 'It is a simple game with basic javascript',
-    webLink: '#',
-    githubLink: 'https://github.com/DevDreamer26/Blackjack',
-  },
-  {
-    id: 4,
-    title: 'Tab-Tracker',
-    description: 'Chrome extension to save the current tab.It can store previous links also.',
-    webLink: '#',
-    githubLink: 'https://github.com/DevDreamer26/Tab-Tracker',
-  },
-  {
-    id: 5,
-    title: 'SHYAM INDUSTRY',
-    description: 'I  have developed the website of SHYAM INDUSTRY, A business website',
-    webLink: 'https://shyamindustry.netlify.app/',
-    githubLink: 'https://github.com/DevDreamer26/',
-  },
-];
-
+// Importing images here 
+import presto from '../../assets/presto.png'
+import gig from '../../assets/gig.png'
+import shyam from '../../assets/shyam.png'
+import tab from "../../assets/tab.png"
+import demo from "../../assets/demo.png"
 const Projects = () => {
-  const [currentProjectIndex, setCurrentProjectIndex] = useState(0);
-
-  const goToPreviousProject = () => {
-    setCurrentProjectIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : projects.length - 1));
-  };
-
-  const goToNextProject = () => {
-    setCurrentProjectIndex((prevIndex) => (prevIndex < projects.length - 1 ? prevIndex + 1 : 0));
-  };
-
-  const currentProject = projects[currentProjectIndex];
+  const projects = [
+    {
+      id: 1,
+      title: 'PRESTOCLEAN',
+      description: 'Full stack Laundry service web application',
+      imageUrl: presto,
+      githubLink: 'https://github.com/DevDreamer26/',
+      webLink: 'https://prestoclean.netlify.app/',
+    },
+    {
+      id: 2,
+      title: 'GigCrafters',
+      description: 'This is my freelancing site',
+      imageUrl: gig,
+      githubLink: 'https://github.com/DevDreamer26/',
+      webLink: 'https://gigcrafters.netlify.app',
+    },
+    {
+      id: 3,
+      title: 'SHYAM INDUSTRY',
+      description: 'A business website for a industry',
+      imageUrl: shyam,
+      githubLink: 'https://github.com/DevDreamer26/',
+      webLink: 'https://shyamindustry.netlify.app',
+    },
+    {
+      id: 4,
+      title: 'Tab-Tracker',
+      description: 'A chrome extension to save tabs.(JS)',
+      imageUrl: tab,
+      githubLink: 'https://github.com/DevDreamer26/Tab-Tracker',
+      webLink:'https://github.com/DevDreamer26/Tab-Tracker'
+    },
+    // {
+    //   id: 5,
+    //   title: 'ROBOTICS-CLUB-AEC',
+    //   description: 'Official robotics club website of Assam Engineering College',
+    //   imageUrl: demo,
+    //   githubLink: 'https://github.com/DevDreamer26/',
+    //   webLink: 'https://github.com/DevDreamer26/',
+    // },
+    // {
+    //   id: 6,
+    //   title: 'QUIZ-CLUB-AEC',
+    //   description: 'Official quiz club website of Assam Engineering College',
+    //   imageUrl: demo,
+    //   githubLink: 'https://github.com/DevDreamer26/',
+    //   webLink: 'https://github.com/DevDreamer26/',
+    // },
+  ];
 
   return (
-    <>
-    <div className="projects-container">
-      <h1>Projects</h1>
-      
-      <div className="project-card">
-        <h2>{currentProject.title}</h2>
-        <div className="project-links">
-          <a href={currentProject.webLink} target="_blank" rel="noopener noreferrer">
-            Web Link
-          </a>
-          <a href={currentProject.githubLink} target="_blank" rel="noopener noreferrer">
-            GitHub Repo
-          </a>
-        </div>
-        <p>{currentProject.description}</p>
-        
+    <div className="projects">
+      <h1>My Projects</h1>
+      <div className="project-list">
+        {projects.map((project) => (
+          <div className="project" key={project.id}>
+            <img src={project.imageUrl} alt={project.title} />
+            <h3>{project.title}</h3>
+            <p>{project.description}</p>
+            <div className="project-buttons">
+              <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
+                <button className="github-button">GitHub Repo</button>
+              </a>
+              <a href={project.webLink} target="_blank" rel="noopener noreferrer">
+                <button className="web-button">Web Link</button>
+              </a>
+            </div>
+          </div>
+        ))}
       </div>
-      <div className="navigation-buttons">
-        <button onClick={goToPreviousProject}>Previous</button>
-        <button onClick={goToNextProject}>Next</button>
-      </div>
+      <Footer/>
     </div>
-    <Footer/>
-    </>
   );
 };
 
