@@ -31,6 +31,13 @@ const projects = [
     webLink: '#',
     githubLink: 'https://github.com/DevDreamer26/Tab-Tracker',
   },
+  {
+    id: 5,
+    title: 'SHYAM INDUSTRY',
+    description: 'I  have developed the website of SHYAM INDUSTRY, A business website',
+    webLink: 'https://shyamindustry.netlify.app/',
+    githubLink: 'https://github.com/DevDreamer26/',
+  },
 ];
 
 const Projects = () => {
