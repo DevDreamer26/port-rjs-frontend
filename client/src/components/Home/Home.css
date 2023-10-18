@@ -7,7 +7,7 @@ body {
 
 
 .container {
-  text-align:justify;
+  text-align:center;
   max-width: 1500px;
   margin: 2px auto;
   padding: 20px;
@@ -28,6 +28,10 @@ body {
   
 }
 .container-exp{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
   max-width: 1500px;
   margin: 12px auto;
@@ -38,13 +42,11 @@ body {
 }
 .container-exp button{
   background-color: #0078d4;
-  color: white;
-  border: none;
+  /* color: white; */
   padding: 10px 20px;
   border-radius: 4px;
   cursor: pointer;
   font-size: 30px;
-  margin-right: 10px;
 }
 .container-exp button:hover {
   background-color: #005a9e;
@@ -61,10 +63,9 @@ header {
 }
 
 header img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 40px;
 }
 
 header h1 {
@@ -98,10 +99,19 @@ header h4 svg {
   background-color: #005a9e;
 }
 
+.new{
+  display: flex;
+  max-width: 1500px;
+  justify-content: center;
+  margin: 12px auto;
+}
+.new img{
+  width: 150px;
+}
 /* Responsive code */
 @media screen and (max-width: 768px) {
   .container {
-    padding: 10px; /* Reduce padding for smaller screens */
+    padding: 45px; /* Reduce padding for smaller screens */
   }
   .container-exp{
     font-size: 15px;

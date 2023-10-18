@@ -16,7 +16,7 @@ const Projects = () => {
       description: 'Full stack Laundry service web application',
       imageUrl: presto,
       githubLink: 'https://github.com/DevDreamer26/',
-      webLink: 'https://prestoclean.netlify.app/',
+      webLink: 'https://prestonew.netlify.app/',
     },
     {
       id: 2,

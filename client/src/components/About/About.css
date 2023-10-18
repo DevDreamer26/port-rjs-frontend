@@ -10,6 +10,10 @@
     border-radius: 8px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
   }
+  .about-me-card img{
+    width: 150px;
+    border-radius: 150px;
+  }
   .edu-list{
     text-align: justify;
   }

@@ -4,18 +4,20 @@ import { Link } from "react-router-dom";
 import { MdLocationOn, } from "react-icons/md";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
-import {RiSurveyFill} from "react-icons/ri";
+import {DiCodeBadge} from "react-icons/di"
+// import {RiSurveyFill} from "react-icons/ri";
 import Footer from "../Footer/Footer";
-import Photo from "../Photo/Photo";
+// import Photo from "../Photo/Photo";
+import pic from '../../assets/mypic.png'
+import pic2 from '../../assets/coding.png'
 
 const Home = () => {
   return (
     <>
       <header>
         <img
-          src="https://cdn.pixabay.com/photo/2015/03/04/22/35/avatar-659651_1280.png"
+          src={pic}
           alt="Mypic image"
-          width="200px"
         />
         <div>
           <h1>Bidyasagar Hazarika</h1>
@@ -34,23 +36,22 @@ const Home = () => {
               <BsLinkedin  />
               
             </Link>
-            <Link to ={"https://bidyasagarresume.tiiny.site/"} target="_blank" ><RiSurveyFill/></Link>
+            <Link to ={"https://bidyasagarresume.tiiny.site/"} target="_blank" ><DiCodeBadge/></Link>
             
           </div>
         </div>
       </header>
 
       <div className="container">
-        <h1 style={{textAlign:'center', fontSize:'60px'}}>I code 🧑‍💻</h1>
         <div className="about-container">
           <p>
-            <p>
+            <h1>
               
-              Hey there! Welcome to my corner,
-            </p>
+              Hey there! <br /> Welcome to my corner,
+            </h1>
             <p >
        
-       I am a student residing in Guwahati, pursuing B.tech in Electronics and Communication Engineering from Assam Engineering College,Guwahati. <br />
+       I am a student residing in Guwahati, pursuing B.tech in Electronics and Communication Engineering from Assam Engineering College,Guwahati. 
        I've immersed myself
          in the world of web development, specializing in the MERN stack
          (MongoDB, Express.js, React, Node.js). This robust technology stack
@@ -62,20 +63,23 @@ const Home = () => {
          code ensures that your project will not only work flawlessly but also
          be easy to scale and maintain. I'm excited to leverage my expertise in
          the MERN stack to help bring your digital vision to life. Let's
-         collaborate to turn your ideas into reality 💻🌐🚀.
+         collaborate to turn your ideas into reality.
      </p>
 
             
           </p>
         </div>
       </div>
-
+    <div className="new">
+      <img src={pic2} alt="just" />
+    </div>
       <div className="container-exp">
-        <h2>Explore more</h2>
-        <Link to='/photo' ><button>Photo gallary</button></Link>
-        <Link to='/blogs' ><button>Blogs</button></Link>
-        <Link to='/random' ><button>Random</button></Link>
-        <Link to ={"https://bidyasagar.netlify.app/"} ><button style={{color:'white',cursor:'pointer' }}>Click 🎁</button></Link>
+        {/* <h2>Explore more</h2> */}
+        <Link to ='/projects'><button>Projects</button></Link>
+        {/* <Link to='/photo' ><button>Gallary</button></Link> */}
+        {/* <Link to='/blogs' ><button>Blogs</button></Link> */}
+        {/* <Link to='/random' ><button>Random</button></Link> */}
+        <Link to ={"https://bidyasagar.netlify.app/"} ><button style={{color:'black',cursor:'pointer',background :'transparent', border:'1px solid black' }}>⚙️.ach</button></Link>
         
       </div>
       

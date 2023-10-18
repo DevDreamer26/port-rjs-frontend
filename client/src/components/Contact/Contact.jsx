@@ -34,20 +34,18 @@ const Contact = () => {
         submissionTime: submissionTimestamp.toLocaleString('en-US', { timeZone: 'Asia/Kolkata' }),
       };
 
-      // Send a POST request to your backend API to store the form data
       await axios.post('https://backend-portfolio-637j.onrender.com/api/submit-form', dataToSend);
 
-      // Clear the form fields after successful submission
       setFormData({
         name: '',
         email: '',
         message: '',
       });
 
-      // Set the submitted state to true to show a success message
+      
       setSubmitted(true);
     } catch (error) {
-      // Handle errors (e.g., display an error message to the user)
+      
       console.error('Error submitting form:', error);
     }
   };

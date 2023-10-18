@@ -2,12 +2,13 @@
 import React from 'react';
 import './About.css'; 
 import Footer from '../Footer/Footer';
+import pic from '../../assets/mypic.png'
 
 const AboutMe = () => {
   return (
     <>
     <div className="about-me-card">
-    <img src="https://cdn.pixabay.com/photo/2015/03/04/22/35/avatar-659651_1280.png" alt="" width="200px" />
+    <img src={pic} alt="mypic"  />
       <h1>Hello!<br />
        I'm Bidyasagar Hazarika. 
       </h1>
@@ -35,8 +36,7 @@ const AboutMe = () => {
       <div className='skills'>
         <h1>My skills</h1>
         <ul>
-        <li>MERN stack web development </li>
-        <li>Git & Github </li>
+        <li>I can buil full-stack websites(MERN) </li>
       </ul>
       </div>
       
