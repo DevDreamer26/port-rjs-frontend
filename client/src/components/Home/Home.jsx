@@ -24,6 +24,7 @@ const Home = () => {
         <div>
           <h1>Bidyasagar Hazarika</h1>
           <hr />
+          <h4>Freelance web developer</h4>
           <h4>
             <MdLocationOn /> Guwahati, India
           </h4>
@@ -48,27 +49,14 @@ const Home = () => {
         <div className="about-container">
           <p>
             <h1>
-              
               Hey there! <br /> Welcome to my corner,
             </h1>
+            <div className="intro-text">
             <p >
-       
-       I am a student residing in Guwahati, pursuing B.tech in Electronics and Communication Engineering from Assam Engineering College,Guwahati. 
-       I've immersed myself
-         in the world of web development, specializing in the MERN stack
-         (MongoDB, Express.js, React, Node.js). This robust technology stack
-         allows me to create dynamic and responsive web applications that not
-         only meet but exceed expectations. Whether it's designing elegant user
-         interfaces with React, optimizing server performance with Node.js, or
-         seamlessly integrating data with MongoDB, I thrive on the challenges
-         that the MERN stack presents. My commitment to clean, maintainable
-         code ensures that your project will not only work flawlessly but also
-         be easy to scale and maintain. I'm excited to leverage my expertise in
-         the MERN stack to help bring your digital vision to life. Let's
-         collaborate to turn your ideas into reality.
+            I am an independent Web Developer with expertise in the MERN stack. If you are seeking additional customization for your website or require professional initial setup, I am well-equipped for the task. Over the past year, I have been dedicated to creating websites tailored to businesses of various sizes. Regardless of the project's scale, I specialize in providing consulting services to help you establish and design your website. Subsequently, I offer comprehensive training and facilitate a smooth handover, empowering you to manage your site with minimal ongoing support. Furthermore, I am available for recurring maintenance tasks to keep your website up-to-date, and I also offer personalized one-on-one training sessions for your convenience.
      </p>
-
-            
+            </div>
+         
           </p>
         </div>
       </div>
@@ -81,7 +69,8 @@ const Home = () => {
         {/* <Link to='/photo' ><button>Gallary</button></Link> */}
         {/* <Link to='/blogs' ><button>Blogs</button></Link> */}
         {/* <Link to='/random' ><button>Random</button></Link> */}
-        <Link to ={"https://bidyasagar.netlify.app/"} ><button style={{color:'black',cursor:'pointer',background :'transparent', border:'1px solid black' }}>⚙️.ach</button></Link>
+        <Link to ={"https://wa.me/918822009123"} ><button style={{color:'black',cursor:'pointer',background :'#0ba6ff', border:'1px solid black' }}>Let's talk </button></Link>
+        <Link to ={"https://bidyasagar.netlify.app/"} ><button style={{color:'black',cursor:'pointer',background :'transparent', border:'1px solid black' }}>⚙️.old</button></Link>
         
       </div>
       

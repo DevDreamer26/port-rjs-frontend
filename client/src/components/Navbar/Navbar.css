@@ -66,9 +66,8 @@
     .nav-list {
       display: none;
       position: absolute;
-      top: 70px;
-      left: 0;
-      right: 0;
+      top: 75px;
+      left: 8px;
       flex-direction: column;
       background-color: #0078d4;
       padding: 20px;

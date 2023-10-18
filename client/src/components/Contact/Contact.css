@@ -1,104 +1,128 @@
 /* Contact.css */
 
-/* Style for the overall container */
 .contact-container {
-  max-width: 950px;
-  margin: 25px auto;
-  padding: 50px;
-  border: 1px solid;
-  border-radius: 15px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
 }
 
-/* Style for the heading */
-.contact-container h1 {
-  font-size: 30px;
+h1 {
+  font-size: 2.2rem;
+  color: #333;
   margin-bottom: 20px;
 }
 
-/* Style for the contact information */
+p {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
 .contact-info {
-  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .contact-info p {
-  margin: 8px 0;
-}
-
-.contact-info a {
-  text-decoration: none;
-  color: #0078d4; /* Link color */
-}
-
-/* Style for the contact form */
-.contact-form {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  font-size: 1.2rem;
+  color: #333;
 }
 
-/* Style for form fields */
+.contact-info p svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  fill: #333;
+}
+
+.success-message {
+  background-color: #0078d4;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+.success-message p {
+  color: white;
+}
+.contact-form {
+  text-align: left;
+}
+
 .form-group {
-  margin-bottom: 20px;
+  margin: 10px 0;
 }
 
 label {
-  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
   width: 100%;
-  padding: 15px;
+  padding: 10px;
+  font-size: 1rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
-textarea {
-  height: 100px;
-}
-
-/* Style for the submit button */
-button[type="submit"] {
+button {
   background-color: #0078d4;
   color: white;
-  border: none;
   padding: 10px 20px;
-  border-radius: 4px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
   cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s;
+  margin-top: 10px;
 }
 
-button[type="submit"]:hover {
-  background-color: #005a9e;
-}
+/* Responsive Design */
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
   .contact-container {
-    padding: 20px;
+    padding: 10px;
   }
-  .contact-container h1 {
-    font-size: 24px;
+
+  h1 {
+    font-size: 1.5rem;
   }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .contact-info p {
+    font-size: 1rem;
+  }
+
+  .contact-info p svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .success-message {
+    font-size: 1rem;
+  }
+
   input[type="text"],
   input[type="email"],
   textarea {
-    font-size: 14px;
+    font-size: 0.9rem;
+    width: 90%;
   }
-}
 
-@media screen and (max-width: 480px) {
-  .contact-container {
-    padding: 20px;
-  }
-  .contact-container h1 {
-    font-size: 15px;
-  }
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    font-size: 12px;
+  button {
+    font-size: 1rem;
   }
 }
