@@ -36,7 +36,7 @@ const AboutMe = () => {
       <div className='skills'>
         <h1>My skills</h1>
         <ul>
-        <li>I can buil full-stack websites(MERN) </li>
+        <li>I can build full-stack applications (MERN) </li>
       </ul>
       </div>
       
