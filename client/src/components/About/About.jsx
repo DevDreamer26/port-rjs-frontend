@@ -29,7 +29,7 @@ const AboutMe = () => {
               Feel free to browse, click around, and if you encounter any bugs,
               just know that they're part of my plan to keep life interesting.
               Thanks for stopping by, and remember, behind every great developer
-              is a coffee machine working overtime! ☕💻🚀
+              is a coffee machine working overtime! ☕💻
               <br />
             </p>
         
