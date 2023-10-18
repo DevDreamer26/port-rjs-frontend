@@ -8,7 +8,9 @@ import {DiCodeBadge} from "react-icons/di"
 // import {RiSurveyFill} from "react-icons/ri";
 import Footer from "../Footer/Footer";
 // import Photo from "../Photo/Photo";
-import pic from '../../assets/mypic.png'
+// import pic from '../../assets/mypic.png'
+import pic from '../../assets/toon.jpg'
+
 import pic2 from '../../assets/coding.png'
 
 const Home = () => {

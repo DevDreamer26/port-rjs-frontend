@@ -2,7 +2,7 @@
 import React from 'react';
 import './About.css'; 
 import Footer from '../Footer/Footer';
-import pic from '../../assets/mypic.png'
+import pic from '../../assets/toon.jpg'
 
 const AboutMe = () => {
   return (
