@@ -29,14 +29,14 @@ const AboutMe = () => {
               Feel free to browse, click around, and if you encounter any bugs,
               just know that they're part of my plan to keep life interesting.
               Thanks for stopping by, and remember, behind every great developer
-              is a coffee machine working overtime! ☕💻
+              is a coffee machine working overtime! 
               <br />
             </p>
         
       <div className='skills'>
         <h1>My skills</h1>
         <ul>
-        <li>I can build full-stack applications (MERN) </li>
+        <li>I can build full-stack web applications (MERN) </li>
       </ul>
       </div>
       
@@ -58,11 +58,11 @@ const AboutMe = () => {
       <div className="position">
         <h1>Position of Responsibility</h1>
         <p>
-          Involvement in clubs
           <ul><li>Technical Coordinator  GDSC-AEC</li>
           <li>Web wing moderator at AEC CODING CLUB</li>
           <li>Technical Coordinator at AEC QUIZ CLUB</li>
           <li>Technical Coordinator(Software) at Robotics Club AEC</li>
+          <li>Google Cloud Study Jam Facilitator 2023 (Cohort-2) of Assam Engineering College,Guwahati</li>
           </ul>
 
         </p>
