@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 import { MdLocationOn, } from "react-icons/md";
 import { AiFillGithub } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
-import {DiCodeBadge} from "react-icons/di"
+// import {DiCodeBadge} from "react-icons/di"
 // import {RiSurveyFill} from "react-icons/ri";
 import Footer from "../Footer/Footer";
-// import Photo from "../Photo/Photo";
-// import pic from '../../assets/mypic.png'
+import resume from '../../assets/resume.png'
 import pic from '../../assets/toon.jpg'
 
 import pic2 from '../../assets/coding.png'
@@ -39,7 +38,7 @@ const Home = () => {
               <BsLinkedin  />
               
             </Link>
-            <Link to ={"https://bidyasagarresume.tiiny.site/"} target="_blank" ><DiCodeBadge/></Link>
+            <Link to ={"https://bidyasagarresume.tiiny.site/"} target="_blank" ><img src={resume} alt="Resume" style={{borderRadius:'0px',width:'50px'}} /></Link>
             
           </div>
         </div>
